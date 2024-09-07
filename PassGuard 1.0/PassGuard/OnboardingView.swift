@@ -25,6 +25,7 @@ struct OnboardingView: View {
                 Text("Swipe across →")
                 Text("")
                 Text("")
+                Spacer()
             }
             
             //How to create an account
@@ -107,22 +108,25 @@ struct OnboardingView: View {
             
             //End of tutorial
             VStack {
+                Spacer()
                 Image (systemName: "lock.shield")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 200, height: 200)
                     .foregroundColor(.blue)
                 Text("Simple as that!").font(.system(size: 25))
-                Text("I").foregroundColor(.white)                                               //Used to push text up exactly 4 lines
-                Text("I").foregroundColor(.white)
-                Text("I").foregroundColor(.white)
-                Text("I").foregroundColor(.white)
+                Text("").foregroundColor(.white)
+                Text("").foregroundColor(.white)
+                Text("").foregroundColor(.white)
+                Text("").foregroundColor(.white)
+                Spacer()
                 
                 Button (action: {
                     PassGuardApp().onboarded = true
                 }, label: {
                     Text("Get Started!").font(.system(size: 25))
                 })
+                Spacer()
             }
         }.tabViewStyle(PageTabViewStyle())
     }

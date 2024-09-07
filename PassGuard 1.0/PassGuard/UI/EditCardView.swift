@@ -125,12 +125,15 @@ struct Edit_Card_View: View {
                         VStack {
                             HStack {
                                 Spacer()
+                                Spacer()
+                                Spacer()
+                                Spacer()
                                 Button(action: {
                                     showInfo = false
                                 }, label: {
                                     Image(systemName: "xmark").foregroundColor(.red)
                                 })
-                                Text("             ")
+                                Spacer()
                             }
                             
                             Text("")
@@ -145,12 +148,12 @@ struct Edit_Card_View: View {
                         }
                         VStack {
                             Text("Password Strength")
-                                .bold()
+                                .bold().foregroundStyle(Color(.black))
                             Text("")
                             Text("")
-                            Text("Your 'Password Strength' is")
-                            Text("a score out of 10 showing how")                                   //Description of Password Strength
-                            Text("secure your password is.")
+                            Text("Your 'Password Strength' is").foregroundStyle(Color(.black))
+                            Text("a score out of 10 showing how").foregroundStyle(Color(.black))                                   //Description of Password Strength
+                            Text("secure your password is.").foregroundStyle(Color(.black))
                             Text("")
                             Text("")
                             

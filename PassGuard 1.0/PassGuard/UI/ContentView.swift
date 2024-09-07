@@ -19,6 +19,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack (spacing: 20) {
+                Spacer()
                 //Main Logo
                 Image(systemName: "lock.shield")
                     .resizable()
